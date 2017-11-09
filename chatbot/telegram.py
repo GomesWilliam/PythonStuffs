@@ -1,20 +1,26 @@
-#telepot library
-import telepot 
+# telepot library
+import telepot
 
-#method to connect your bot from your token 
+
+# method to connect your bot from your token
 bot = telepot.Bot("463791509:AAH_naZeg_zYzzn_tIgioayaWsBCKBqJX20")
 
 
-#A function who get the message and return to your terminal 
+# A function who get the message and return to your terminal
 def recebendoMsg(msg):
-	print(msg['text'])
+    print(msg['text'])
 
-#Every time someone text to the bot refreshing the function sending a new message.   
+
+# Every time someone text to the bot refreshing
+# the function sending a new message.
 bot.message_loop(recebendoMsg)
 
 
 while True:
-	pass
+    pass
 
 
-#This python file get a mesage send for your bot and return that message on temrminal
+"""
+This python file get a mesage send for your bot
+and return that message on temrminal
+"""
